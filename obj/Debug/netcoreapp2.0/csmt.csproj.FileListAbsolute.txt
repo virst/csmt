@@ -1,0 +1,11 @@
+C:\Users\virstyuk_mv\Source\Repos\csmt\bin\Debug\netcoreapp2.0\csmt.deps.json
+C:\Users\virstyuk_mv\Source\Repos\csmt\bin\Debug\netcoreapp2.0\csmt.runtimeconfig.json
+C:\Users\virstyuk_mv\Source\Repos\csmt\bin\Debug\netcoreapp2.0\csmt.runtimeconfig.dev.json
+C:\Users\virstyuk_mv\Source\Repos\csmt\bin\Debug\netcoreapp2.0\csmt.dll
+C:\Users\virstyuk_mv\Source\Repos\csmt\bin\Debug\netcoreapp2.0\csmt.pdb
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.csprojResolveAssemblyReference.cache
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.csproj.CoreCompileInputs.cache
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.AssemblyInfoInputs.cache
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.AssemblyInfo.cs
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.dll
+C:\Users\virstyuk_mv\Source\Repos\csmt\obj\Debug\netcoreapp2.0\csmt.pdb

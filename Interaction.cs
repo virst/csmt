@@ -61,9 +61,9 @@ namespace csmt
 
             var pp = GetPathParam(request);
             var file_path = pp.fn;
-            if (file_path.EndsWith(".png"))
+            if (file_path.EndsWith(".png") || file_path.EndsWith(".ico"))
             {
-                FileStream file = File.Open(file_path, FileMode.Open);
+                FileStream file = File.Open(file_path.Replace("%20", " "), FileMode.Open);
                 WriteHeaderToClient(client, "image/png", file.Length);
                 byte[] buf = new byte[1024];
                 int len;
@@ -73,7 +73,7 @@ namespace csmt
             }
             else if (file_path.EndsWith(".mp4"))
             {
-                FileStream file = File.Open(file_path, FileMode.Open);
+                FileStream file = File.Open(file_path.Replace("%20", " "), FileMode.Open);
                 WriteHeaderToClient(client, "video/mp4", file.Length);
                 byte[] buf = new byte[1024];
                 int len;
@@ -83,7 +83,7 @@ namespace csmt
             }
             else
             {
-                var html = HtmlGenerator.GetIndexHtml(file_path, Server_Directory,null);
+                var html = HtmlGenerator.GetIndexHtml(file_path, Server_Directory, pp.Parametrs["p1"]);
                 var bb = Encoding.ASCII.GetBytes(html);
                 WriteHeaderToClient(client, "text/html", bb.Length);
                 client.GetStream().Write(bb, 0, bb.Length);
@@ -118,6 +118,7 @@ namespace csmt
                 fn = ss[0];
                 if (ss.Length > 1)
                     prm = ss[1];
+                //fn = fn.Replace("%20", " ");
             }
 
             public string fn = "";
@@ -129,7 +130,7 @@ namespace csmt
                 {
                     paramDic p = new paramDic();
                     var ss = prm.Split('&');
-                    foreach(var d in ss)
+                    foreach (var d in ss)
                     {
                         string v = null;
                         var ss2 = d.Split('=');
@@ -146,7 +147,7 @@ namespace csmt
 
         class paramDic : Dictionary<string, string>
         {
-           new string  this[string s]
+            public new string this[string s]
             {
                 get
                 {
@@ -154,7 +155,7 @@ namespace csmt
                         return base[s];
                     return null;
                 }
-                
+
             }
         }
     }
