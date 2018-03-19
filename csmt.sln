@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csmt", "csmt.csproj", "{FB70AC85-CB9D-4ADD-9651-64F3752C7F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB70AC85-CB9D-4ADD-9651-64F3752C7F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB70AC85-CB9D-4ADD-9651-64F3752C7F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB70AC85-CB9D-4ADD-9651-64F3752C7F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB70AC85-CB9D-4ADD-9651-64F3752C7F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4580DF86-5813-497D-AFF3-0864DB30C875}
+	EndGlobalSection
+EndGlobal
